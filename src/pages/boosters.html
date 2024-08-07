@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/config.js"></script>
+	<script type="module" src="../js/boosters.js" defer></script>
+    <script type="module">
+        import { activateMenuItemEffect } from "../js/utils.js";
+        activateMenuItemEffect();
+    </script>
+    <title>Mustachio</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="balance-display" id="balanceDisplay">
+        Balance: <span class="user-balance"></span>
+    </div>
+
+    <div class="boosters-box" id="boostersBox">
+        <div class="boosters-title" id="boostersTitle">🚀 Boosters 🚀</div>
+        <div class="booster-container" id="speed+1Container">
+            <p>Tap Speed: +1</p>
+            <span class="booster-cost" id="speed+1">10</span>
+        </div>
+        <div class="booster-container" id="tapLimit+20Container">
+            <p>Tap Limit: +20</p>
+            <span class="booster-cost" id="tapLimit+20">25</span>
+        </div>
+    </div>
+
+    <div class="boosters-box" id="questsBox">
+        <div class="boosters-title" id="questsTitle">💎 Quests 💎</div>
+        <div class="booster-container" id="followXContainer">
+            <p>Follow X Account</p>
+            <span class="booster-cost disabled" id="followX">Coming Soon</span>
+        </div>
+        <div class="booster-container" id="joinTelegramContainer">
+            <p>Join Telegram Channel</p>
+            <span class="booster-cost disabled" id="joinTelegram">Coming Soon</span>
+        </div>
+    </div>
+
+    <div class="menu-bar">
+        <div class="menu-item" id="wallet" style="--mask-url: none" onclick="location.href='../../index.html'">
+            <img src="../../assets/menu_icons/wallet.png" alt="wallet">
+        </div>
+        <div class="menu-item" id="boosters" style="--mask-url: none">
+            <img src="../../assets/menu_icons/earn.png" alt="earn">
+        </div>
+        <div class="menu-item" id="ranking" style="--mask-url: none">
+            <img src="../../assets/menu_icons/ranking.png" alt="ranking">
+            <div class="upcoming-tag">soon</div>
+        </div>
+        <div class="menu-item" id="referral" style="--mask-url: none" onclick="location.href='./referral.html'">
+            <img src="../../assets/menu_icons/refer.png" alt="refer">
+        </div>
+    </div>
+</body>
+</html>
